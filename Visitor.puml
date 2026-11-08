@@ -1,0 +1,13 @@
+@startuml Visitor
+
+title Visitor Pattern
+'left to right direction
+hide members
+
+class GrafoLista implements Grafo
+class GrafoMatriz implements Grafo
+GrafoVisitor ..> Grafo
+GrafoVisitor ..> GrafoLista
+GrafoVisitor ..> GrafoMatriz
+
+@enduml
